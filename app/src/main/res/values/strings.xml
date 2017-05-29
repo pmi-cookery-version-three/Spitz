@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ШПИЦ</string>
+
+    <string name="about">O породе</string>
+    <string name="porod">Породы</string>
+
+    <string-array name="first_screen">
+        <item>В обществе</item>
+        <item>Интелект</item>
+        <item>Обучение</item>
+        <item>Уход</item>
+        <item>Корм</item>
+        <item>Квартира</item>
+    </string-array>
+    <string-array name="second_screen">
+        <item>Немецкий шпиц</item>
+        <item>Померанский шпиц</item>
+        <item>Японский шпиц</item>
+        <item>Финский шпиц</item>
+        <item>Американский эскимосский шпиц</item>
+        <item>Карело-финская лайка</item>
+        <item>Карельская медвежья собака</item>
+    </string-array>
+
+    <string-array name="second_screen2">
+        <item>Акита-ину</item>
+        <item>Самоедская собака</item>
+        <item>Евразиер</item>
+        <item>Вольпино итальяно</item>
+        <item>Корейский чиндо</item>
+
+    </string-array>
+    <string-array name="third_screen">
+
+    </string-array>
+</resources>
