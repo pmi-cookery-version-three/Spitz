@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,8 +28,27 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MainActivity.this,SecondScreen.class);
-                startActivity(intent);
+                Intent detailIntent = new Intent(MainActivity.this,DetailActivity.class);
+                switch (position){
+                    case 0:
+                        startActivity(detailIntent);
+                        break;
+                    case 1:
+                        startActivity(detailIntent);
+                        break;
+                    case 2:
+                        Intent intentPor = new Intent(MainActivity.this,AboutActivity.class);
+                        startActivity(intentPor);
+                        break;
+                    case 3:
+                        startActivity(detailIntent);
+                        break;
+                    case 4:
+                        Intent intent = new Intent(MainActivity.this,SecondScreen.class);
+                        startActivity(intent);
+                        break;
+                 }
+
             }
         });
     }
