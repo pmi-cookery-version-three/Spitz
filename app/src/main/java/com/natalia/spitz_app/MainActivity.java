@@ -1,14 +1,13 @@
 package com.natalia.spitz_app;
 
 import android.content.Intent;
-import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,9 +30,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent detailIntent = new Intent(MainActivity.this,DetailActivity.class);
                 switch (position){
                     case 0:
+                        detailIntent.putExtra("number",0);
                         startActivity(detailIntent);
                         break;
                     case 1:
+                        detailIntent.putExtra("number",1);
                         startActivity(detailIntent);
                         break;
                     case 2:
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intentPor);
                         break;
                     case 3:
+                        detailIntent.putExtra("number",2);
                         startActivity(detailIntent);
                         break;
                     case 4:

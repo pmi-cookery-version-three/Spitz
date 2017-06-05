@@ -16,11 +16,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+             <ImageView
+                 android:id="@+id/picture"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/history_pic"
+                 android:scaleType="centerInside"/>
             <TextView
+                android:id="@+id/textInfo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/long_string"
-                android:textSize="30sp"/>
+                android:textSize="25sp"
+                android:padding="16dp"
+                android:gravity=""
+                android:textAlignment="gravity"/>
+
+            <ImageView
+                android:id="@+id/pictureSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/history_pic2"
+                android:scaleType="centerInside"/>
         </LinearLayout>
 
 
